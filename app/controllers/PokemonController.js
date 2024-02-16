@@ -13,8 +13,8 @@ function _drawMyPokemon() {
 function _drawPokemon(randomNum) {
     const pokemons = AppState.pokemons
     let htmlString = ''
-    pokemons.find(pokemon => pokemon.id = randomNum)
-    setHTML('pokemon', pokemons.PokemonHTMLTemplate)
+    pokemons.find(pokemon => pokemon.id = randomNum) ??
+        setHTML('pokemon', pokemons.PokemonHTMLTemplate)
 }
 
 export class PokemonController {
